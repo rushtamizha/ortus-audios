@@ -1,0 +1,199 @@
+"use client";
+
+import React from "react";
+import { useRouter } from "next/navigation";
+import { motion } from "framer-motion";
+import {
+  ChevronLeft,
+  MessageSquare,
+  ShieldCheck,
+  Zap,
+  ArrowRight,
+  Speaker,
+  Disc,
+  Radio,
+} from "lucide-react";
+
+const MONITOR_AUDIO_PRODUCTS = [
+  {
+    id: "ma1",
+    name: "Monitor Audio Bronze 300 (7G)",
+    category: "Floorstanding Speaker",
+    series: "Bronze Series 7G",
+    price: "₹1,45,000",
+    image: "/monitor/ma_bronze_7g_300_pack_iso_walnut-1.jpg",
+    description: "The flagship floorstander of the Bronze series. Featuring dual 8-inch C-CAM mid-bass drivers and a Gold Dome tweeter with UD Waveguide for a commanding, detailed soundstage in large rooms.",
+    specs: ["Dual 8\" C-CAM Drivers", "200W Power Handling", "90dB Sensitivity", "18kg Build"]
+  },
+  {
+    id: "ma2",
+    name: "Monitor Audio Bronze 50 (7G)",
+    category: "Bookshelf Speaker",
+    series: "Bronze Series 7G",
+    price: "₹73,000",
+    image: "/monitor/ma_bronze_7g_50_pack_iso_walnut.jpg",
+    description: "Compact yet powerful 2-way bookshelf speakers. Engineered with a high-performance 8-inch C-CAM driver, perfect for high-fidelity stereo setups or as premium surrounds in a theater.",
+    specs: ["8\" C-CAM Driver", "100W Power Handling", "UD Waveguide", "Gold Dome Tweeter"]
+  },
+  {
+    id: "ma3",
+    name: "Monitor Audio Bronze Centre",
+    category: "Center Channel",
+    series: "Bronze Series 7G",
+    price: "₹59,500",
+    image: "/monitor/ma_bronze_7g_centre_pack_iso_walnut.jpg",
+    description: "The heart of your home cinema. Dual 5.5-inch drivers ensure crystal-clear dialogue and seamless tonal matching with the rest of the Bronze 7G range.",
+    specs: ["Dual 5.5\" Drivers", "120W Power Handling", "88dB Sensitivity", "Cinema Optimized"]
+  },
+  {
+    id: "ma4",
+    name: "Monitor Audio Bronze On-Wall",
+    category: "Surround Speaker",
+    series: "Bronze Series 7G",
+    price: "₹41,500",
+    image: "/monitor/ma_bronze_7g_on-wall_pack_iso_walnut.jpg",
+    description: "Ultra-slim, high-performance on-wall speakers. Featuring a dual-tweeter array for wide dispersion, ideal for discreet side or rear surround placements.",
+    specs: ["Dual 25mm Tweeters", "80W Power Handling", "Slim Profile", "Wall Mountable"]
+  },{
+    id: "sub1",
+    name: "Monitor Audio Vestra W12",
+    category: "Powered Subwoofer",
+    series: "Vestra Series",
+    price: "₹1,18,000",
+    image: "/monitor/ma_vestra_w12_white_iso_grille.jpg",
+    description: "A high-linear excursion 12-inch sealed subwoofer delivering 500W RMS. Featuring a triple suspension driver and triple-preset DSP (Impact, Movie, Music) for surgically precise low-frequency extension down to 17Hz.",
+    specs: ["12\" High-Excursion Driver", "500W RMS Output", "17Hz — 200Hz Response", "Triple DSP Modes"]
+  }
+];
+
+const DenonPage = () => {
+  const router = useRouter();
+
+  const handleWhatsApp = (pName) => {
+    const phone = "+919108333211";
+    const msg = encodeURIComponent(
+      `Inquiry for Denon ${pName}: Please share availability and current corporate offer price for my home theater project.`,
+    );
+    window.open(`https://wa.me/${phone}?text=${msg}`, "_blank");
+  };
+
+  return (
+    <main className="min-h-screen bg-[#020205] text-white font-sans">
+      {/* Dynamic Header */}
+      <section className="pt-32 pb-20 px-6 lg:px-12 bg-gradient-to-b from-[#0a0a0c] to-transparent">
+        <div className="max-w-7xl mx-auto">
+          <button
+            onClick={() => router.push("/")}
+            className="flex items-center gap-3 text-white/30 hover:text-white transition-all mb-10 group"
+          >
+            <ChevronLeft
+              size={18}
+              className="group-hover:-translate-x-1 transition-transform"
+            />
+            <span className="text-[10px] font-black uppercase tracking-[0.4em]">
+              Back to Hub
+            </span>
+          </button>
+          <h1 className="text-6xl md:text-9xl font-black tracking-tighter uppercase italic leading-none">
+            monitor audio
+          </h1>
+        </div>
+      </section>
+
+      {/* Product List */}
+      <section className="py-12 px-6 lg:px-12">
+        <div className="max-w-7xl mx-auto space-y-20">
+          {MONITOR_AUDIO_PRODUCTS.map((product, index) => (
+            <motion.div
+              key={product.id}
+              initial={{ opacity: 0, y: 60 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+              className={`group flex flex-col lg:flex-row gap-12 lg:gap-20 items-center  ${
+                index % 2 !== 0 ? "lg:flex-row-reverse" : ""
+              }`}
+            >
+              {/* Visual Side: Minimalistic & Immersive */}
+              <div className=" w-full   relative aspect-[5/4] lg:aspect-square overflow-hidden rounded-[3rem] bg-[#ffffff] border border-white/5">
+                <motion.img
+                  src={product.image}
+                  alt={product.name}
+                  className="w-full object-contain h-full   group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-1000 ease-out"
+                />
+
+                {/* Floating Floating Tech Badges */}
+                <div className="absolute top-10 left-10 flex flex-col gap-3">
+                  <div className="px-5 py-2 bg-black/50 backdrop-blur-xl border border-white/10 rounded-full text-[10px] font-black uppercase tracking-[0.2em] text-white text-center">
+                    {product.category}
+                  </div>
+                </div>
+              </div>
+
+              {/* Content Side: Typographic Precision */}
+              <div className="w-full lg:w-1/2 flex flex-col">
+                <div className="mb-10">
+                  <h2 className="text-5xl lg:text-7xl font-bold tracking-tighter text-white leading-none mb-6">
+                    {product.name}
+                  </h2>
+
+                  <div className="flex items-baseline gap-4 mb-8">
+                    <span className="text-xl font-black text-white uppercase tracking-widest">
+                      MRP
+                    </span>
+                    <span className="text-3xl font-light tracking-tighter text-white">
+                      {product.price}
+                    </span>
+                  </div>
+
+                  <p className="text-white/50 text-lg leading-relaxed max-w-md font-light">
+                    {product.description}
+                  </p>
+                </div>
+
+                {/* Specs Grid with better contrast */}
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 mb-12">
+                  {product.specs.map((spec) => (
+                    <div key={spec} className="flex flex-col gap-2">
+                      <div className="flex items-center gap-2">
+                        <Zap size={14} className="text-[#8B0000]" />
+                        <span className="text-[10px] font-black uppercase tracking-[0.15em] text-white/80">
+                          Spec
+                        </span>
+                      </div>
+                      <span className="text-[11px] font-medium text-white/50 uppercase tracking-wider pl-6">
+                        {spec}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+
+                {/* High-End CTA Row */}
+                <div className="flex flex-col sm:flex-row gap-4 mt-auto">
+                  <button
+                    onClick={() => handleWhatsApp(product.name)}
+                    className="flex-1 py-6 bg-white text-black text-[11px] font-black uppercase tracking-[0.3em] rounded-2xl flex items-center justify-center gap-4 hover:bg-[#8B0000] hover:text-white transition-all duration-500 active:scale-95"
+                  >
+                    <MessageSquare size={16} /> Get Assured Best Price
+                  </button>
+                </div>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </section>
+
+      {/* Footer Branding */}
+      <footer className="py-24 text-center border-t border-white/5 mt-20">
+        <div className="flex justify-center gap-12 mb-8 opacity-20">
+          <Speaker /> <Disc /> <Radio />
+        </div>
+        <p className="text-white/10 text-[9px] font-black uppercase tracking-[0.8em]">
+          Ortus Audios • Authorized Denon Solutions Partner
+        </p>
+      </footer>
+    </main>
+  );
+};
+
+export default DenonPage;

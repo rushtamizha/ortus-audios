@@ -1,141 +1,222 @@
-import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { 
-  Menu, 
-  X, 
-  Speaker, 
-  Tv, 
-  Projector, 
-  Wrench, 
-  PhoneCall, 
-  ChevronDown 
-} from 'lucide-react';
+"use client";
+
+import React, { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import {
+  Menu,
+  X,
+  Layers,
+  Handshake,
+  ShieldCheck,
+  Home,
+  Speaker,
+  ArrowRight,
+  Globe,
+  MessageSquareQuote,
+  Phone,
+} from "lucide-react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
-  // Colors from your requested palette
   const colors = {
-    darkRed: '#8B0000',
-    darkBlue: '#00008B',
-    darkGreen: '#006400',
-    darkYellow: '#9B870C',
+    darkRed: "#8B0000",
+    darkBlue: "#00008B",
+    darkYellow: "#9B870C",
   };
 
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 20);
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    const handleScroll = () => setScrolled(window.scrollY > 40);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const menuItems = [
-    { name: 'Home Theatre', icon: <Tv size={18} />, href: '#' },
-    { name: 'Speakers', icon: <Speaker size={18} />, href: '#' },
-    { name: 'Projectors', icon: <Projector size={18} />, href: '#' },
-    { name: 'Installation', icon: <Wrench size={18} />, href: '#' },
+    {
+      name: "Home",
+      icon: <Home size={18} />,
+      href: "/",
+    },
+    {
+      name: "Services",
+      icon: <Layers size={18} />, // Represents layers of integration/setup
+      href: "#services",
+    },
+    {
+      name: "Partners",
+      icon: <Handshake size={18} />, // Represents business partnerships/brands
+      href: "#partners",
+    },
+    {
+      name: "Why Us",
+      icon: <ShieldCheck size={18} />, // Represents trust, warranty, and authority
+      href: "#whyus",
+    },
+    {
+      name: "Products",
+      icon: <Speaker size={18} />, // Represents audio-visual hardware
+      href: "#products",
+    },
+    {
+      name: "Testimonials",
+      icon: <MessageSquareQuote size={18} />, // Specific testimonial/quote icon
+      href: "#testimonials",
+    },
   ];
 
   return (
-    <nav className={`fixed w-full z-[100] transition-all duration-500 ${
-      scrolled ? 'bg-white/90 backdrop-blur-xl py-3 shadow-sm' : 'bg-transparent py-6'
-    }`}>
-      <div className="max-w-7xl mx-auto px-6 lg:px-12">
-        <div className="flex justify-between items-center">
-          
-          {/* Brand Identity */}
-          <motion.div 
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            className="flex flex-col leading-none"
+    <div className="fixed w-full z-[100] top-0 left-0">
+      <nav
+        className={`mx-auto transition-all duration-700 ease-[cubic-bezier(0.23,1,0.32,1)] ${
+          scrolled
+            ? "max-w-[95%] md:max-w-5xl mt-4 rounded-2xl border border-white/10 bg-[#0a0a0c]/90 backdrop-blur-xl shadow-2xl py-3"
+            : "max-w-full bg-transparent py-6 border-b border-white/5"
+        }`}
+      >
+        <div className="px-6 lg:px-10 flex justify-between items-center">
+          <a
+            href="/"
+            className="flex items-center gap-3 group transition-transform duration-500"
           >
-            <span className="text-2xl font-black tracking-tighter uppercase" style={{ color: colors.darkBlue }}>
-              Ortus<span style={{ color: colors.darkRed }}>Audios</span>
-            </span>
-            <span className="text-[10px] font-bold tracking-[0.2em] text-gray-500 mt-1 uppercase">
-              Bangalore • Estd 2025
-            </span>
-          </motion.div>
+            <div className="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center border border-white/10 overflow-hidden group-hover:border-white/20 transition-all shadow-xl shadow-black/50">
+              <img
+                src="/logo.jpg" // Replace with your actual filename (e.g., logo.svg or logo.png)
+                alt="Ortus Audios Logo"
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+            </div>
+            <div className="flex flex-col">
+              <span className="text-xl font-black tracking-tighter uppercase leading-none text-white">
+                ORTUS<span style={{ color: colors.darkRed }}>AUDIOS</span>
+              </span>
+              <span className="text-[8px] font-bold tracking-[0.4em] text-white/40 uppercase mt-1">
+                Bangalore
+              </span>
+            </div>
+          </a>
 
-          {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-10">
+          {/* Desktop Nav */}
+          <div className="hidden lg:flex items-center space-x-2">
             {menuItems.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
-                className="group flex items-center space-x-2 text-[13px] font-bold uppercase tracking-widest text-gray-800 hover:text-black transition-all"
+                className="px-5 py-2 text-[11px] font-bold uppercase tracking-widest text-white/60 hover:text-white hover:bg-white/5 rounded-full transition-all"
               >
-                <span className="text-gray-400 group-hover:scale-110 transition-transform" style={{ color: scrolled ? colors.darkBlue : 'inherit' }}>
-                  {item.icon}
-                </span>
-                <span>{item.name}</span>
-                <motion.div 
-                  className="h-[2px] w-0 bg-current transition-all group-hover:w-full absolute -bottom-1"
-                  style={{ backgroundColor: colors.darkYellow }}
-                />
+                {item.name}
               </a>
             ))}
           </div>
 
-          {/* CTA & Mobile Toggle */}
-          <div className="flex items-center space-x-6">
-            <button 
-              className="hidden sm:flex items-center space-x-2 px-6 py-3 rounded-full text-white text-[12px] font-bold uppercase tracking-tighter shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1 active:scale-95"
-              style={{ backgroundColor: colors.darkRed }}
+          {/* Actions */}
+          <div className="flex items-center gap-4">
+            <button
+              onClick={() => {
+                const phoneNumber = "+919108333211";
+                const message = encodeURIComponent(
+                  "Hi Ortus Audios, I'm looking for a professional consultation for my home audio/theatre project. Could you help me get started?",
+                );
+                window.open(
+                  `https://wa.me/${phoneNumber}?text=${message}`,
+                  "_blank",
+                );
+              }}
+              className="hidden md:flex items-center gap-2 px-6 py-2.5 rounded-full text-[10px] font-black uppercase tracking-[0.2em] bg-white text-black hover:bg-[#8B0000] hover:text-white transition-all duration-500 active:scale-95 shadow-lg shadow-white/5"
             >
-              <PhoneCall size={16} />
-              <span>Consult Expert</span>
+              Consult <ArrowRight size={14} />
             </button>
-            
-            <button 
-              onClick={() => setIsOpen(!isOpen)}
-              className="lg:hidden p-2 rounded-lg transition-colors"
-              style={{ color: colors.darkBlue, backgroundColor: `${colors.darkBlue}10` }}
+
+            <button
+              onClick={() => setIsOpen(true)}
+              className="lg:hidden p-2 text-white bg-white/5 border border-white/10 rounded-lg hover:bg-white/10 transition-colors"
             >
-              {isOpen ? <X size={28} /> : <Menu size={28} />}
+              <Menu size={24} />
             </button>
           </div>
         </div>
-      </div>
+      </nav>
 
-      {/* Mobile Menu Overlay */}
+      {/* Modern Side-Drawer Mobile Menu */}
       <AnimatePresence>
         {isOpen && (
-          <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
-            exit={{ opacity: 0, height: 0 }}
-            className="lg:hidden bg-white border-t border-gray-100 overflow-hidden shadow-2xl"
-          >
-            <div className="p-6 space-y-4">
-              {menuItems.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className="flex items-center justify-between p-4 rounded-xl bg-gray-50 hover:bg-gray-100 transition-colors"
+          <>
+            {/* Backdrop */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={() => setIsOpen(false)}
+              className="fixed inset-0 bg-black/80 backdrop-blur-sm z-[110]"
+            />
+
+            {/* Menu Panel */}
+            <motion.div
+              initial={{ x: "100%" }}
+              animate={{ x: 0 }}
+              exit={{ x: "100%" }}
+              transition={{ type: "spring", damping: 25, stiffness: 200 }}
+              className="fixed right-0 top-0 h-full w-[85%] max-w-sm bg-[#0f0f12] z-[120] p-8 shadow-2xl flex flex-col"
+            >
+              {/* Close Button Header */}
+              <div className="flex justify-between items-center mb-12">
+                <span className="text-[10px] font-bold tracking-[0.3em] text-white/30 uppercase">
+                  Navigation
+                </span>
+                <button
+                  onClick={() => setIsOpen(false)}
+                  className="p-2 bg-white/5 rounded-full text-white hover:bg-white/10"
                 >
-                  <div className="flex items-center space-x-4">
-                    <span style={{ color: colors.darkBlue }}>{item.icon}</span>
-                    <span className="font-bold text-gray-800">{item.name}</span>
+                  <X size={20} />
+                </button>
+              </div>
+
+              {/* Menu Links */}
+              <div className="flex flex-col space-y-4">
+                {menuItems.map((item, i) => (
+                  <motion.a
+                    key={item.name}
+                    initial={{ opacity: 0, x: 20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: i * 0.1 }}
+                    href={item.href}
+                    className="flex items-center justify-between p-4 rounded-2xl bg-white/[0.03] border border-white/5 text-white group hover:bg-white/[0.08] transition-all"
+                  >
+                    <div className="flex items-center gap-4">
+                      <div className="p-2 rounded-lg bg-black/40 text-white/60">
+                        {item.icon}
+                      </div>
+                      <span className="font-bold text-sm tracking-wide">
+                        {item.name}
+                      </span>
+                    </div>
+                    <ArrowRight
+                      size={16}
+                      className="text-white/20 group-hover:text-white"
+                    />
+                  </motion.a>
+                ))}
+              </div>
+
+              {/* Mobile Footer */}
+              <div className="mt-auto pt-8 border-t border-white/5">
+                <div className="flex items-center gap-4 p-4 rounded-2xl bg-[#8B0000]/10 border border-[#8B0000]/20">
+                  <Phone size={18} className="text-[#8B0000]" />
+                  <div>
+                    <p className="text-[10px] uppercase font-bold text-white/50">
+                      Speak to Expert
+                    </p>
+                    <p className="text-sm font-bold text-white tracking-tight">
+                      ++919108333211 
+                    </p>
                   </div>
-                  <ChevronDown size={18} className="-rotate-90 text-gray-400" />
-                </a>
-              ))}
-              <div className="grid grid-cols-2 gap-4 pt-4">
-                <div className="p-4 rounded-xl border-2 flex flex-col items-center justify-center space-y-2" style={{ borderColor: colors.darkGreen }}>
-                  <span className="text-[10px] font-bold uppercase text-gray-500">Service Hours</span>
-                  <span className="text-xs font-black">10:30 - 20:00</span>
-                </div>
-                <div className="p-4 rounded-xl border-2 flex flex-col items-center justify-center space-y-2" style={{ borderColor: colors.darkYellow }}>
-                  <span className="text-[10px] font-bold uppercase text-gray-500">Location</span>
-                  <span className="text-xs font-black text-center">Kammanahalli</span>
                 </div>
               </div>
-            </div>
-          </motion.div>
+            </motion.div>
+          </>
         )}
       </AnimatePresence>
-    </nav>
+    </div>
   );
 };
 

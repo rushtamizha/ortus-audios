@@ -13,7 +13,7 @@ const partners = [
   { name: "MARANTZ", type: "Musical Fidelity" },
   { name: "ONKYO", type: "THX Certified Audio" },
   { name: "OPTOMA", type: "Cinema Projection" },
-  { name: "PIONEER ELITE", type: "Studio Grade AV" },
+  { name: "PIONEER ", type: "Studio Grade AV" },
   { name: "POLK AUDIO", type: "American HiFi" },
   { name: "PURE ACOUSTICS", type: "Cinematic Systems" },
   { name: "WIIM", type: "Smart Streaming" },

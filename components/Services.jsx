@@ -27,7 +27,7 @@ const services = [
   },
   {
     title: "Premium Audio",
-    category: "Bose & Hi-Fi Systems",
+    category: "Klipsh & Hi-Fi Systems",
     desc: "Wholesale and retail of world-class audio speakers and multi-room sound engineering.",
     icon: <Speaker className="w-6 h-6" />,
     image: "/Services/20240924_Getting_Started_with_Dolby_Atmos_Mixing_Choosing_Your_Speakers_1600x838_01.webp",

@@ -161,17 +161,17 @@ const KLIPSCH_PRODUCTS = [
     name: "F200",
     category: "Floorstanding",
     series: "Custom Series",
-    price: "9,500",
+    price: "1,49,800/-",
     image: "/klipsch/F-200_Angle.webp",
     description:
       'High-quality, affordable Floorstanding audio solution with a 6.5" copper woofer .',
     specs: ["91 dB Sensitivity", "aluminum ", "copper woofer"],
   },{
     id: "k15",
-    name: "F8000",
+    name: "RP-8000 F-II",
     category: "Floorstanding",
     series: "Custom Series",
-    price: "9,500",
+    price: "2,64,800",
     image: "/klipsch/RP-8000F-II-Carousel-1.webp",
     description:
       'High-quality, affordable Floorstanding audio solution with a 6.5" copper woofer .',

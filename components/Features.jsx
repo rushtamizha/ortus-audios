@@ -19,12 +19,6 @@ const colors = {
 
 const features = [
   {
-    title: "Verified Service",
-    desc: "Bangalore's authorized destination for genuine AV components.",
-    icon: <ShieldCheck className="w-6 h-6" />,
-    accent: colors.darkBlue
-  },
-  {
     title: "Expert Installation",
     desc: "Precision calibration by certified acoustic engineers.",
     icon: <Settings className="w-6 h-6" />,

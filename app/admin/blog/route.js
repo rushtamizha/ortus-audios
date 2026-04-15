@@ -2,7 +2,7 @@ import connectDB from '@/lib/mongodb';
 import Blog from '@/models/Blog';
 import { NextResponse } from 'next/server';
 import { getServerSession } from "next-auth/next";
-import { authOptions } from "../auth/[...nextauth]/route";
+import { authOptions } from "@/lib/auth";
 
 
 export async function GET() {

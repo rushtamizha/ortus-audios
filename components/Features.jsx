@@ -64,7 +64,7 @@ const Features = () => {
               </span>
             </div>
             <h2 className="text-4xl md:text-5xl font-extrabold text-white tracking-tighter leading-tight">
-              Trusted by <span className="text-white/60">100+ Customers</span> in Bangalore
+              Trusted by <span className="text-white/60">100+ Customers</span> in Karnataka
             </h2>
           </motion.div>
           

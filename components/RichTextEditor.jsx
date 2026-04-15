@@ -9,7 +9,7 @@ import Underline from "@tiptap/extension-underline";
 import Placeholder from "@tiptap/extension-placeholder";
 import {
   Bold,
-  Italic,
+  ,
   Underline as UnderIcon,
   List,
   ListOrdered,
@@ -102,10 +102,10 @@ const MenuBar = ({ editor }) => {
         title="Bold"
       />
       <ToolbarBtn
-        action={() => editor.chain().focus().toggleItalic().run()}
-        active="italic"
-        icon={<Italic size={18} />}
-        title="Italic"
+        action={() => editor.chain().focus().toggle().run()}
+        active=""
+        icon={< size={18} />}
+        title=""
       />
       <ToolbarBtn
         action={() => editor.chain().focus().toggleUnderline().run()}

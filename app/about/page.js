@@ -12,7 +12,7 @@ import Link from "next/link";
 
 export const metadata = {
   title: "About Ortus Audios | Precision Sound Engineering",
-  description: "Learn about Ortus Audios, Bangalore's premier provider of professional home theater and enterprise audio solutions.",
+  description: "Learn about Ortus Audios, Karnataka's premier provider of professional home theater and enterprise audio solutions.",
 };
 
 export default function AboutPage() {
@@ -44,12 +44,12 @@ export default function AboutPage() {
           <span className="text-[10px] font-black uppercase tracking-[0.4em] text-[#8B0000] mb-6 block">
             Our Legacy
           </span>
-          <h1 className="text-6xl md:text-8xl font-black uppercase tracking-tighter italic leading-[0.9] mb-10">
+          <h1 className="text-6xl md:text-8xl font-black uppercase tracking-tighter  leading-[0.9] mb-10">
             Defining the <br />
             <span className="text-[#8B0000]">Standard of Sound</span>
           </h1>
           <p className="text-white/40 text-lg md:text-xl max-w-2xl leading-relaxed font-medium">
-            Based in Bangalore, Ortus Audios was founded on a single principle: 
+            Based in Karnataka, Ortus Audios was founded on a single principle: 
             Acoustic perfection is not an accident—it’s an engineered experience.
           </p>
         </div>
@@ -68,7 +68,7 @@ export default function AboutPage() {
           </div>
           
           <div className="space-y-8">
-            <h2 className="text-4xl font-black uppercase tracking-tighter italic">
+            <h2 className="text-4xl font-black uppercase tracking-tighter ">
               Beyond Just <span className="text-[#8B0000]">Hardware</span>
             </h2>
             <p className="text-white/60 leading-relaxed text-lg">
@@ -97,7 +97,7 @@ export default function AboutPage() {
             <h2 className="text-[10px] font-black uppercase tracking-[0.5em] text-white/20 mb-4">
               Our Core Values
             </h2>
-            <p className="text-3xl font-bold uppercase italic tracking-tight">The DNA of Ortus Audios</p>
+            <p className="text-3xl font-bold uppercase  tracking-tight">The DNA of Ortus Audios</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -118,7 +118,7 @@ export default function AboutPage() {
       <section className="pb-32 px-6">
         <div className="max-w-6xl mx-auto bg-gradient-to-br from-[#8B0000] to-red-950 p-12 md:p-20 rounded-[3rem] text-center shadow-2xl shadow-red-900/20 relative overflow-hidden group">
           <div className="absolute inset-0 bg-[url('/noise.png')] opacity-20 pointer-events-none" />
-          <h2 className="text-4xl md:text-6xl font-black uppercase italic tracking-tighter mb-8 relative z-10">
+          <h2 className="text-4xl md:text-6xl font-black uppercase  tracking-tighter mb-8 relative z-10">
             Ready to elevate <br /> your auditory space?
           </h2>
           <Link 

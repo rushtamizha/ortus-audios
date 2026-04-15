@@ -17,7 +17,7 @@ const CHAT_DATA = [
   },
   {
     id: 3,
-    question: "Do you offer on-site consultation in Bangalore?",
+    question: "Do you offer on-site consultation in Karnataka?",
     answer: "Absolutely. Our engineers visit your site for acoustic measurement and layout planning to provide a customized proposal.",
   },
   {

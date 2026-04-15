@@ -77,10 +77,10 @@ const Advantage = () => {
               viewport={{ once: true }}
               className="text-4xl md:text-6xl font-extrabold text-white tracking-tighter"
             >
-              Why Choose <span className="text-white/50 italic">Us.</span>
+              Why Choose <span className="text-white/50 ">Us.</span>
             </motion.h2>
           </div>
-          <p className="text-white/50 text-sm font-medium tracking-wide max-w-xs md:text-right italic">
+          <p className="text-white/50 text-sm font-medium tracking-wide max-w-xs md:text-right ">
             "Delivering world-class acoustic engineering to elite
             spaces."
           </p>

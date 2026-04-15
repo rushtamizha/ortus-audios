@@ -12,7 +12,7 @@ export default async function BlogListPage() {
     <main className="min-h-screen bg-[#020205] text-white pt-32 pb-20 px-6">
       <div className="max-w-7xl mx-auto">
         <header className="mb-16 border-l-4 border-[#8B0000] pl-8">
-          <h1 className="text-6xl font-black uppercase tracking-tighter italic">The <span className="text-[#8B0000]">Audio</span> Ledger</h1>
+          <h1 className="text-6xl font-black uppercase tracking-tighter ">The <span className="text-[#8B0000]">Audio</span> Ledger</h1>
           <p className="text-white/40 mt-4 max-w-xl font-medium uppercase tracking-widest text-xs">
             Deep dives into enterprise-grade audio engineering and high-fidelity sound.
           </p>

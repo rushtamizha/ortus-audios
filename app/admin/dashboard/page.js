@@ -59,7 +59,7 @@ export default function AdminDashboard() {
             <h1 className="text-4xl font-black text-white tracking-tighter uppercase">
               Content <span className="text-[#8B0000]">Vault</span>
             </h1>
-            <p className="text-white/40 text-sm mt-2 font-medium italic">
+            <p className="text-white/40 text-sm mt-2 font-medium ">
               Managing {blogs.length} high-performance articles
             </p>
           </div>

@@ -8,7 +8,7 @@ const BlogSchema = new mongoose.Schema({
   excerpt: { type: String }, // Short summary for SEO/Cards
   content: { type: String, required: true }, // The HTML from TipTap
   category: { type: String, default: "Reviews" },
-  author: { type: String, default: "Eswaran" },
+  author: { type: String, default: "Ortus" },
   readingTime: { type: String },
   published: { type: Boolean, default: true },
 }, { timestamps: true });

@@ -51,13 +51,13 @@ const ContactPage = () => {
           >
             <span className="h-px w-8 bg-[#8B0000]" />
             <span className="text-[10px] font-black uppercase tracking-[0.4em] text-white/50">
-              Ortus Audios Bangalore
+              Ortus Audios Karnataka
             </span>
           </motion.div>
           
           <h1 className="text-5xl md:text-8xl font-extrabold text-white tracking-tighter mb-8">
             Consult <br />
-            <span className="text-white/20 italic">The Experts.</span>
+            <span className="text-white/20 ">The Experts.</span>
           </h1>
 
           <div className="space-y-10 mt-12">
@@ -68,7 +68,7 @@ const ContactPage = () => {
               <div>
                 <p className="text-white/30 text-[10px] font-black uppercase tracking-widest mb-1">Our Location</p>
                 <p className="text-white font-bold text-lg leading-snug">
-                  Kammanahalli, <br /> Bangalore, KA 560084
+                  Kammanahalli, <br /> Karnataka,560084
                 </p>
               </div>
             </div>
@@ -79,7 +79,7 @@ const ContactPage = () => {
               </div>
               <div>
                 <p className="text-white/30 text-[10px] font-black uppercase tracking-widest mb-1">Direct Line</p>
-                <p className="text-white font-bold text-lg">+91 9148512123</p>
+                <p className="text-white font-bold text-lg"> 9108333211 / 9148512123</p>
               </div>
             </div>
           </div>
@@ -103,7 +103,7 @@ const ContactPage = () => {
                 <input 
                   required
                   type="text" 
-                  placeholder="Eswaran"
+                  placeholder="Ortus"
                   className="w-full bg-white/5 border border-white/5 rounded-2xl py-5 pl-14 pr-6 text-white focus:border-[#8B0000]/50 focus:outline-none transition-all"
                   onChange={(e) => setFormData({...formData, name: e.target.value})}
                 />

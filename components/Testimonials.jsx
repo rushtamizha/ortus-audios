@@ -147,7 +147,7 @@ const Testimonials = () => {
             </span>
           </div>
           <h2 className="text-4xl md:text-6xl font-extrabold text-white tracking-tighter">
-            Voices of <span className="text-white/50 italic">Excellence.</span>
+            Voices of <span className="text-white/50 ">Excellence.</span>
           </h2>
         </div>
 
@@ -179,7 +179,7 @@ const Testimonials = () => {
                     ))}
                   </div>
 
-                  <p className="text-lg md:text-xl text-white/80 font-medium leading-relaxed mb-8 italic tracking-tight">
+                  <p className="text-lg md:text-xl text-white/80 font-medium leading-relaxed mb-8  tracking-tight">
                     "{review.comment}"
                   </p>
 

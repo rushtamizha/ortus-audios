@@ -95,13 +95,13 @@ const Footer = () => {
                   ORTUS<span style={{ color: colors.darkRed }}>AUDIOS</span>
                 </span>
                 <span className="text-[8px] font-bold tracking-[0.4em] text-white/40 uppercase mt-1">
-                  Bangalore
+                  Karnataka
                 </span>
               </div>
             </a>
             <h3 className="text-3xl md:text-5xl font-extrabold text-white tracking-tighter leading-tight mb-8">
               Ready to elevate your{" "}
-              <span className="text-white/20 italic">Acoustic Space?</span>
+              <span className="text-white/20 ">Acoustic Space?</span>
             </h3>
           </div>
 
@@ -119,7 +119,7 @@ const Footer = () => {
                   No.27, 2nd Floor,
                   <br /> Kullappa Circle, Venkateshappa Layout, <br /> Nehru
                   Road, Kammanahalli, <br />
-                  Bangalore-560084, Karnataka
+                  Karnataka-560084, 
                 </p>
               </div>
               <div

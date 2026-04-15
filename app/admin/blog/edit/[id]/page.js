@@ -101,7 +101,7 @@ export default function EditPost() {
                 <ArrowLeft size={20} />
              </Link>
              <div>
-                <h1 className="text-4xl font-black uppercase tracking-tighter italic">EDIT <span className="text-[#8B0000]">POST</span></h1>
+                <h1 className="text-4xl font-black uppercase tracking-tighter ">EDIT <span className="text-[#8B0000]">POST</span></h1>
                 <p className="text-white/30 text-[10px] uppercase tracking-[0.3em] font-bold">Modifying: {post.slug}</p>
              </div>
           </div>

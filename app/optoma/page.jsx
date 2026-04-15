@@ -166,7 +166,7 @@ const DenonPage = () => {
               Back to Hub
             </span>
           </button>
-          <h1 className="text-6xl md:text-9xl font-black tracking-tighter uppercase italic leading-none">
+          <h1 className="text-6xl md:text-9xl font-black tracking-tighter uppercase  leading-none">
             ONKYO
           </h1>
         </div>

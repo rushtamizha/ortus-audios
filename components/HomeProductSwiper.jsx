@@ -156,7 +156,7 @@ const CategorySwiper = () => {
             </span>
           </motion.div>
           <h2 className="text-4xl md:text-7xl font-extrabold text-white tracking-tighter leading-none">
-            Browse by <span className="text-white/50 italic">Brand.</span>
+            Browse by <span className="text-white/50 ">Brand.</span>
           </h2>
         </div>
         <div className="flex items-center gap-4 text-white/50 text-[10px] font-bold uppercase tracking-widest pb-2">

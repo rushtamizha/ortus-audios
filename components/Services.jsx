@@ -60,7 +60,7 @@ const Services = () => {
             whileInView={{ opacity: 1, y: 0 }}
             className="text-4xl md:text-6xl font-extrabold text-white tracking-tighter mt-4"
           >
-            Precision <span className="text-white/60 italic">Sound & Vision.</span>
+            Precision <span className="text-white/60 ">Sound & Vision.</span>
           </motion.h2>
         </div>
 

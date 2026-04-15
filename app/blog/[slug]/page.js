@@ -53,7 +53,7 @@ export default async function BlogPostPage({ params }) {
               />{" "}
               Back to Ledger
             </Link>
-            <h1 className="text-3xl sm:text-5xl md:text-7xl font-black leading-[1] md:leading-[0.9] tracking-tighter uppercase italic break-words">
+            <h1 className="text-3xl sm:text-5xl md:text-7xl font-black leading-[1] md:leading-[0.9] tracking-tighter uppercase  break-words">
               {post.title}
             </h1>
           </div>

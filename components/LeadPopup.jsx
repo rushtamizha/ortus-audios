@@ -61,13 +61,13 @@ export default function LeadPopup() {
                 <div className="w-16 h-16 bg-green-500/20 text-green-500 rounded-full flex items-center justify-center mx-auto mb-6">
                   <Zap size={32} />
                 </div>
-                <h3 className="text-xl font-black uppercase italic tracking-tighter">Request Received</h3>
+                <h3 className="text-xl font-black uppercase  tracking-tighter">Request Received</h3>
                 <p className="text-white/40 text-xs mt-2 uppercase tracking-widest font-bold">Our experts will call you shortly</p>
               </div>
             ) : (
               <>
                 <div className="mb-8">
-                  <h2 className="text-3xl font-black uppercase italic tracking-tighter leading-none">
+                  <h2 className="text-3xl font-black uppercase  tracking-tighter leading-none">
                     Elevate Your <span className="text-[#8B0000]">Space</span>
                   </h2>
                   <p className="text-[10px] font-bold text-white/30 uppercase tracking-[0.3em] mt-3">Free Site Consultation</p>
@@ -86,7 +86,7 @@ export default function LeadPopup() {
                     <span className="text-[9px] font-black text-white/20 uppercase ml-2 tracking-widest">Mobile Number</span>
                     <div className="relative">
                       <Phone className="absolute left-4 top-1/2 -translate-y-1/2 text-white/20" size={16} />
-                      <input name="phone" type="tel" required className="w-full bg-white/5 border border-white/10 rounded-2xl py-4 pl-12 pr-4 text-sm outline-none focus:border-[#8B0000] transition-all" placeholder="+91" />
+                      <input name="phone" type="tel" required className="w-full bg-white/5 border text-white border-white/10 rounded-2xl py-4 pl-12 pr-4 text-sm outline-none focus:border-[#8B0000] transition-all" placeholder="+91" />
                     </div>
                   </div>
 

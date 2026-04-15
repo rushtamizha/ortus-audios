@@ -37,28 +37,7 @@ const ContactPage = () => {
   return (
     <main className="min-h-screen bg-[#020205] pb-24 relative">
       
-      {/* --- TOP NAVIGATION BAR --- */}
-      <nav className="fixed top-0 left-0 w-full z-50 px-6 py-6 border-b border-white/5 backdrop-blur-md bg-black/20">
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <button 
-            onClick={() => router.push('/')}
-            className="group flex items-center gap-3 text-white/50 hover:text-white transition-all"
-          >
-            <div className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center group-hover:border-[#8B0000] group-hover:bg-[#8B0000] transition-all">
-              <ChevronLeft size={18} className="group-hover:text-white" />
-            </div>
-            <span className="text-[10px] font-black uppercase tracking-[0.3em]">Go Back</span>
-          </button>
 
-          <button 
-            onClick={() => router.push('/')}
-            className="hidden md:flex items-center gap-2 text-white/20 hover:text-white transition-colors"
-          >
-            <Home size={14} />
-            <span className="text-[9px] font-bold uppercase tracking-widest">Home</span>
-          </button>
-        </div>
-      </nav>
 
       {/* --- MAIN CONTENT --- */}
       <div className="pt-40 px-6 lg:px-12 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20">
@@ -100,7 +79,7 @@ const ContactPage = () => {
               </div>
               <div>
                 <p className="text-white/30 text-[10px] font-black uppercase tracking-widest mb-1">Direct Line</p>
-                <p className="text-white font-bold text-lg">+91 90000 00000</p>
+                <p className="text-white font-bold text-lg">+91 9148512123</p>
               </div>
             </div>
           </div>

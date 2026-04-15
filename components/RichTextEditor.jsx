@@ -9,7 +9,6 @@ import Underline from "@tiptap/extension-underline";
 import Placeholder from "@tiptap/extension-placeholder";
 import {
   Bold,
-  ,
   Underline as UnderIcon,
   List,
   ListOrdered,
@@ -22,6 +21,7 @@ import {
   Heading2,
   Code,
   Minus,
+  Italic,
 } from "lucide-react";
 
 const MenuBar = ({ editor }) => {
@@ -104,7 +104,7 @@ const MenuBar = ({ editor }) => {
       <ToolbarBtn
         action={() => editor.chain().focus().toggle().run()}
         active=""
-        icon={< size={18} />}
+        icon={<Italic size={18} />}
         title=""
       />
       <ToolbarBtn

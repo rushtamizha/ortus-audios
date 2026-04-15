@@ -1,4 +1,3 @@
-// middleware.js
 import { withAuth } from "next-auth/middleware";
 import { NextResponse } from "next/server";
 
@@ -9,11 +8,15 @@ export default withAuth(
   {
     callbacks: {
       authorized: ({ req, token }) => {
-        // ALLOW anyone to GET the blog list (public-facing)
-        if (req.nextUrl.pathname.startsWith("/api/blog") && req.method === "GET") {
+        const { pathname } = req.nextUrl;
+        const { method } = req;
+
+        // 1. Public API Access: Allow anyone to read blogs
+        if (pathname.startsWith("/api/blog") && method === "GET") {
           return true;
         }
-        // REQUIRE login for everything else in /admin or POST/DELETE
+
+        // 2. Admin Access: Require a valid token for everything else
         return !!token;
       },
     },
@@ -21,5 +24,13 @@ export default withAuth(
 );
 
 export const config = { 
-  matcher: ["/admin/:path*", "/api/blog/:path*"] 
+  /* The regex below means:
+    - Match all paths starting with /admin
+    - BUT ignore the path /admin/login 
+    - Match all paths starting with /api/blog
+  */
+  matcher: [
+    "/admin/((?!login).*)", 
+    "/api/blog/:path*"
+  ] 
 };

@@ -14,28 +14,28 @@ import 'swiper/css/pagination';
 const projects = [
   {
     title: "The Obsidian Cinema",
-    location: "Indiranagar, Karnataka",
+    location: "Indiranagar, Bangalore",
     tags: ["9.2.4 Dolby Atmos", "4K Laser"],
     image: "https://images.unsplash.com/photo-1593784991095-a205069470b6?q=80&w=1600",
     accent: "#8B0000"
   },
   {
     title: "Sonic Penthouse",
-    location: "Whitefield, Karnataka",
+    location: "Whitefield, Bangalore",
     tags: ["Bose Built-in", "Multi-room"],
     image: "https://images.unsplash.com/photo-1545016803-a63d0007179b?q=80&w=1600",
     accent: "#00008B"
   },
   {
     title: "Aura Corporate Suite",
-    location: "MG Road, Karnataka",
+    location: "MG Road, Bangalore",
     tags: ["Epson Pro", "Conference Audio"],
     image: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1600",
     accent: "#9B870C"
   },
   {
     title: "Zen Audio Lounge",
-    location: "Jayanagar, Karnataka",
+    location: "Jayanagar, Bangalore",
     tags: ["Hi-Res Audio", "Acoustic Walls"],
     image: "https://images.unsplash.com/photo-1558002038-1055907df827?q=80&w=1600",
     accent: "#006400"

@@ -12,7 +12,7 @@ import Link from "next/link";
 
 export const metadata = {
   title: "About Ortus Audios | Precision Sound Engineering",
-  description: "Learn about Ortus Audios, Karnataka's premier provider of professional home theater and enterprise audio solutions.",
+  description: "Learn about Ortus Audios, Bangalore's premier provider of professional home theater and enterprise audio solutions.",
 };
 
 export default function AboutPage() {
@@ -49,7 +49,7 @@ export default function AboutPage() {
             <span className="text-[#8B0000]">Standard of Sound</span>
           </h1>
           <p className="text-white/40 text-lg md:text-xl max-w-2xl leading-relaxed font-medium">
-            Based in Karnataka, Ortus Audios was founded on a single principle: 
+            Based in Bangalore, Ortus Audios was founded on a single principle: 
             Acoustic perfection is not an accident—it’s an engineered experience.
           </p>
         </div>

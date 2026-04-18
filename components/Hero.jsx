@@ -22,7 +22,7 @@ const slides = [
     id: "01",
     title: "Cinematic Projection.",
     subtitle: "4K Laser Technology",
-    desc: "Transform your living space with ultra-bright 4K projection designed for Karnataka's elite homes.",
+    desc: "Transform your living space with ultra-bright 4K projection designed for Bangalore's elite homes.",
     img: "/Banners/4k-projector-worth-it_1200x1200_crop_center.webp",
     accent: colors.darkRed,
   },
@@ -164,7 +164,7 @@ export default function PremiumHero() {
             Location
           </span>
           <span className="text-white text-xs font-bold">
-            Kammanahalli, Karnataka
+            Bangalore, Karnataka
           </span>
         </div>
         <div className="h-8 w-[1px] bg-white/10" />

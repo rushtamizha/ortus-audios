@@ -51,7 +51,7 @@ const ContactPage = () => {
           >
             <span className="h-px w-8 bg-[#8B0000]" />
             <span className="text-[10px] font-black uppercase tracking-[0.4em] text-white/50">
-              Ortus Audios Karnataka
+              Ortus Audios Bangalore
             </span>
           </motion.div>
           
@@ -68,7 +68,7 @@ const ContactPage = () => {
               <div>
                 <p className="text-white/30 text-[10px] font-black uppercase tracking-widest mb-1">Our Location</p>
                 <p className="text-white font-bold text-lg leading-snug">
-                  Kammanahalli, <br /> Karnataka,560084
+                  Kammanahalli, <br />Bangalore , Karnataka,560084
                 </p>
               </div>
             </div>

@@ -71,7 +71,7 @@ const Navbar = () => {
                 ORTUS<span style={{ color: colors.darkRed }}>AUDIOS</span>
               </span>
               <span className="text-[8px] font-bold tracking-[0.4em] text-white/40 uppercase mt-1">
-                Karnataka
+                Bangalore
               </span>
             </div>
           </Link>

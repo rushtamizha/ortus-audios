@@ -20,7 +20,7 @@ const services = [
   },
   {
     title: "Projector Solutions",
-    category: "4K & Laser Display",
+    category: "4K projectors",
     desc: "Authorized dealer and calibration experts for EPSON and BenQ high-performance projectors.",
     icon: <Projector className="w-6 h-6" />,
     image: "/Services/Welcome-to-a-new-era-in-Home-Cinema.avif",

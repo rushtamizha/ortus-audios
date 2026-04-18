@@ -20,7 +20,7 @@ const advantages = [
   },
   {
     title: "Premium Equipment",
-    desc: "Only top-tier, globally-recognized audio brands like Bose, Epson, and BenQ.",
+    desc: "Only top-tier, globally-recognized audio brands like Epson, and BenQ.",
     icon: <Award className="w-6 h-6" />,
     color: "#00008B", // Dark Blue
   },

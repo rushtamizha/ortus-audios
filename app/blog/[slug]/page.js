@@ -218,6 +218,7 @@ export default async function BlogPostPage({ params }) {
           <div
             className="prose prose-invert prose-red max-w-none 
             /* Fixes the squashed text and adds proper spacing */
+            prose-p:my-6
             prose-p:text-white/60 prose-p:text-lg prose-p:leading-loose prose-p:mb-8
             prose-strong:text-white prose-strong:font-bold
             prose-img:rounded-3xl prose-img:my-12 prose-img:border prose-img:border-white/10

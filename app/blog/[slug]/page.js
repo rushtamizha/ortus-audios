@@ -32,6 +32,7 @@ export default async function BlogPostPage({ params }) {
   return (
     <article className="min-h-screen bg-[#020205] text-white">
       {/* Hero Header */}
+      <div dangerouslySetInnerHTML={{ __html: blogContent }} />
       <div className="relative h-[60vh] w-full bg-[#08080c]">
         {heroImage && (
           <img

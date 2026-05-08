@@ -260,7 +260,7 @@ const MasterEditor = ({ content, onChange }) => {
   }), []);
 
   return (
-    <div className="w-full bg-white text-black rounded-xl overflow-hidden border border-gray-200">
+    <div className="w-full bg-white text-white rounded-xl overflow-hidden border border-gray-200">
       <style>{`
         .ql-container { font-size: 16px; min-h: 400px; }
         .ql-editor img { border-radius: 12px; margin: 20px 0; }

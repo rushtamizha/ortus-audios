@@ -174,7 +174,11 @@ const MenuBar = ({ editor }) => {
 export default function MasterEditor({ content, onChange }) {
   const editor = useEditor({
     extensions: [
-      StarterKit,
+      StarterKit.configure({
+    // This ensures that hitting Enter or Shift-Enter 
+    // behaves predictably
+    hardBreak: false, 
+  }),
       Underline,
       Link.configure({
         openOnClick: false,

@@ -61,3 +61,6 @@ body {
 .prose p {
   margin-bottom: 1.5rem !important;
 }
+.logo{
+  background-color: rgb(255, 255, 255);
+}
